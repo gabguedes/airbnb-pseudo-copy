@@ -1,0 +1,212 @@
+/* ************************************FORMATAÇÃO GERAL*************************** */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --theme: #ff385c;
+    --light: #fff;
+    --dark: #000;
+    --grey: #cecece;
+    --dark-grey:#535353;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+/* ******************************FIM FORMATAÇÃO GERAL**************************** */
+
+.container-main{
+    padding: 80px /*380px*/; /*Criação das margens da página*/
+}
+
+/* ********************************TÍTULO****************************************** */
+.local{
+    margin-bottom: 20px;
+}
+
+.local p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.local p i{
+    color: var(--theme);
+}
+
+.local p span{
+    color: var(--dark-grey);
+    font-weight: 600;
+    text-decoration: underline;
+}
+/* ********************************FIM TÍTULO****************************************** */
+
+
+
+/* *******************************GALERIA DE FOTOS**************************************** */
+.gallery{
+    display: flex;
+    align-items: center;
+    height: 505px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main-img{
+    height: 505px;
+    width: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 10px 0px 0px 10px;
+    transition: .3s;
+}
+
+.main-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+.mini-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mini-gallery img{
+    transition: .3s;
+}
+
+.mini-gallery img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+.mini-gallery img:nth-child(1){
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.mini-gallery img:nth-child(2){
+    margin-bottom: 15px;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.mini-gallery img:nth-child(3){
+    margin-right: 15px;
+}
+
+.mini-gallery img:nth-child(4){
+    border-radius: 0px 0px 10px 0px;
+}
+
+
+.img-gal{
+    height: 245px;
+    width: 45%;
+    object-fit: cover;
+}
+/* ***********************************FIM GALERIA***************************************************** */
+
+
+
+/* ******************************DESCRIÇÃO*********************************************** */
+.desc{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.desc h2{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.desc h3{
+    font-weight: 600;
+}
+
+.desc p{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* *******************************FIM DESCRIÇÃO******************************************** */
+
+
+.container{
+    display: flex;
+    height: 200px;
+}
+
+
+
+/* *****************************COMODIDADES************************************************** */
+.comodidades{
+    width: 60%;
+}
+
+.comodidades h2{
+    margin-bottom: 20px;
+}
+
+.comod-list{
+    color: var(--dark);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.comod-list p{
+    margin-bottom: 17px;
+}
+
+/* ***********************FIM COMODIDADES**************************************************** */
+
+
+
+/* ****************************** RESERVA ********************************************  */
+.reserve-page{
+    width: 40%;
+    border: solid 1px var(--grey);
+    box-shadow: 0px 5px 25px var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.reserve-page span{
+    font-weight: 200;
+}
+.reserve-page h2{
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.btn{
+    padding: 10px 25px;
+    background-color: var(--theme);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--light);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 15px #ff385c;
+}
+
+
+
+/* ****************************** FIM RESERVA ********************************************  */
